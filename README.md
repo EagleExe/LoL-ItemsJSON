@@ -74,7 +74,7 @@ String.prototype.removeTrinket=function(){return this.replace(/ \([\D\d]*\)/gi,"
 OUTPUT = "document.ItemCodes = {";
 for(code in INPUT)
     OUTPUT += '"' + INPUT[code].name.removeTrinket() + '":' + code + ",";
-console.log( OUTPUT.slice(0,-1) + "};" );```
+console.log( OUTPUT.slice(0,-1) + "};" ); ```
 
 <img src="images\image-20200808012956246.png" alt="image-20200808012956246" style="zoom: 50%;" />
 
@@ -92,7 +92,7 @@ Then point Firefox to the new *champion.json* file. Open the console. Paste the 
 OUTPUT = "document.ChampionCodes = {";
 for(name in INPUT)
     OUTPUT += '"' + name + '":' + INPUT[name].key + ",";
-console.log( OUTPUT.slice(0,-1) + "};" );```
+console.log( OUTPUT.slice(0,-1) + "};" ); ```
 
 Copy the output.
 
