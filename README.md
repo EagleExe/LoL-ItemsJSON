@@ -19,7 +19,7 @@ There are two ways to use it:
 - Or you can make the script execute automatically every time you navigate to a page that has https://www.mobafire.com/league-of-legends/build/ in the URL. To do this you'll need to be using **Firefox** or Chrome (haven't tested yet), and you'll need a userscript <u>extension</u> such as **Tampermonkey** or Greasemonkey (haven't tested yet).
 
 To add the script to Tampermonkey click on the black Tampermonkey icon and then click <u>Create a new script...</u><br>
-<img src="images\image-20200807194711068.png" alt="image-20200807194711068"  /><br>
+![i](images/image-20200807194711068.png")
 Then delete the code that shows up by default an replace it with my script.<br>
 <img src="images\image-20200808015435179.png" alt="image-20200808015435179"  /><br>
 
