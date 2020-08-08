@@ -69,8 +69,7 @@ Point Firefox to the *items.json* file (*there will be a new URL for a newer ver
 `INPUT = JSON.parse(this.JSONView.json.data).data;`<br>
 `String.prototype.removeTrinket=function(){return this.replace(/ \([\D\d]*\)/gi,"")};`<br>
 `OUTPUT = "document.ItemCodes = {";`<br>
-`for(code in INPUT)`<br>
-	`OUTPUT += '"' + INPUT[code].name.removeTrinket() + '":' + code + ",";`<br>
+`for(code in INPUT) OUTPUT += '"' + INPUT[code].name.removeTrinket() + '":' + code + ",";`<br>
 `console.log( OUTPUT.slice(0,-1) + "};" );`<br>
 
 
@@ -88,8 +87,7 @@ Then point Firefox to the new *champion.json* file. Open the console. Paste the 
 
 `INPUT = JSON.parse(this.JSONView.json.data).data;`<br>
 `OUTPUT = "document.ChampionCodes = {";`<br>
-`for(name in INPUT)`<br>
-	`OUTPUT += '"' + name + '":' + INPUT[name].key + ",";`<br>
+`for(name in INPUT) OUTPUT += '"' + name + '":' + INPUT[name].key + ",";`<br>
 `console.log( OUTPUT.slice(0,-1) + "};" );`<br>
 
 
