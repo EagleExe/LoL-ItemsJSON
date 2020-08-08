@@ -58,9 +58,13 @@ and
 *Note if Mobafire changes the design of their site then the various <u>querySelector / querySelectorAll / getElementById</u> commands in the userscript may need to be modified, but a tutorial for how to do that would be much too long for me to make right now.*
 
 I found the complete list of item codes inside the following file,
+
 https://ddragon.leagueoflegends.com/cdn/10.15.1/data/en_US/item.json
+
 and I found the complete list of champion codes in the following file.
+
 https://ddragon.leagueoflegends.com/cdn/10.15.1/data/en_US/champion.json
+
 
 *I'm new here so I don't know who ddragon is or if this is the official source for the latest updates for developers. These are just the only sources that I was able to find after a short while of poking around on the interwebs. The current version of LoL is 10.16, but I don't think there where any new items or champions in this update, so these version 10.15.1 files should work.*
 
