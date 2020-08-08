@@ -18,13 +18,10 @@ There are two ways to use it:
 - You can paste the code into your browser's console (press either F12 or CTRL+SHIFT+I to open the console) and press enter. The blue button will appear in the upper-right of the page.
 - Or you can make the script execute automatically every time you navigate to a page that has https://www.mobafire.com/league-of-legends/build/ in the URL. To do this you'll need to be using **Firefox** or Chrome (haven't tested yet), and you'll need a userscript <u>extension</u> such as **Tampermonkey** or Greasemonkey (haven't tested yet).
 
-To add the script to Tampermonkey click on the black Tampermonkey icon and then click <u>Create a new script...</u>
-
-<img src="images\image-20200807194711068.png" alt="image-20200807194711068"  />
-
-Then delete the code that shows up by default an replace it with my script.
-
-<img src="images\image-20200808015435179.png" alt="image-20200808015435179"  />
+To add the script to Tampermonkey click on the black Tampermonkey icon and then click <u>Create a new script...</u><br>
+<img src="images\image-20200807194711068.png" alt="image-20200807194711068"  /><br>
+Then delete the code that shows up by default an replace it with my script.<br>
+<img src="images\image-20200808015435179.png" alt="image-20200808015435179"  /><br>
 
 Then click  <u>File</u> > <u>Save</u> or hit CTRL+S.
 Close the Tampermonkey tab and then navigate to the Mobafire page that has the item sets, and you'll see the *Items JSON* button appear automatically.
@@ -72,12 +69,12 @@ These JSON files have a bunch of data that we don't need, so I made scripts to c
 
 Point Firefox to the *items.json* file (*there will be a new URL for a newer version of LoL that you will have to find*) and open the console by pressing CTRL+SHIFT+I or F12. Paste the following commands.
 
-`INPUT = JSON.parse(this.JSONView.json.data).data;`
-`String.prototype.removeTrinket=function(){return this.replace(/ \([\D\d]*\)/gi,"")};`
-`OUTPUT = "document.ItemCodes = {";`
-`for(code in INPUT)`
-`	OUTPUT += '"' + INPUT[code].name.removeTrinket() + '":' + code + ",";`
-`console.log( OUTPUT.slice(0,-1) + "};" );`
+`INPUT = JSON.parse(this.JSONView.json.data).data;`<br>
+`String.prototype.removeTrinket=function(){return this.replace(/ \([\D\d]*\)/gi,"")};`<br>
+`OUTPUT = "document.ItemCodes = {";`<br>
+`for(code in INPUT)`<br>
+`	OUTPUT += '"' + INPUT[code].name.removeTrinket() + '":' + code + ",";`<br>
+`console.log( OUTPUT.slice(0,-1) + "};" );`<br>
 
 <img src="images\image-20200808012956246.png" alt="image-20200808012956246"  />
 
@@ -91,11 +88,11 @@ This block of black text is the new code that we need to paste into the userscri
 
 Then point Firefox to the new *champion.json* file. Open the console. Paste the following code and press enter.
 
-`INPUT = JSON.parse(this.JSONView.json.data).data;`
-`OUTPUT = "document.ChampionCodes = {";`
-`for(name in INPUT)`
-`	OUTPUT += '"' + name + '":' + INPUT[name].key + ",";`
-`console.log( OUTPUT.slice(0,-1) + "};" );`
+`INPUT = JSON.parse(this.JSONView.json.data).data;`<br>
+`OUTPUT = "document.ChampionCodes = {";`<br>
+`for(name in INPUT)`<br>
+`	OUTPUT += '"' + name + '":' + INPUT[name].key + ",";`<br>
+`console.log( OUTPUT.slice(0,-1) + "};" );`<br>
 
 Copy the output.
 
