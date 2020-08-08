@@ -1,4 +1,4 @@
-# WHY THIS IS
+# WHY IT IS
 
 I'm new to League of Legends, and I have no idea why these sites with guides don't already have this function. My buddy was teaching me how to manually enter item sets from a Mobafire guide, and I was like **WTH why isn't there an export feature?** The game clearly has the ability to import JSON files. This short snippet of Javascript shrinks a 10 minute task down to 10 seconds. Maybe if I get requests I'll update the script to work on other sites too.
 
