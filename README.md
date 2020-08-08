@@ -69,12 +69,12 @@ These JSON files have a bunch of data that we don't need, so I made scripts to c
 
 Point Firefox to the *items.json* file (*there will be a new URL for a newer version of LoL that you will have to find*) and open the console by pressing CTRL+SHIFT+I or F12. Paste the following commands.
 
-<code>INPUT = JSON.parse(this.JSONView.json.data).data;
+<pre>INPUT = JSON.parse(this.JSONView.json.data).data;
 String.prototype.removeTrinket=function(){return this.replace(/ \([\D\d]*\)/gi,"")}
 OUTPUT = "document.ItemCodes = {";
 for(code in INPUT)
     OUTPUT += '"' + INPUT[code].name.removeTrinket() + '":' + code + ",";
-console.log( OUTPUT.slice(0,-1) + "};" );</code>
+console.log( OUTPUT.slice(0,-1) + "};" );</pre>
 
 <img src="images\image-20200808012956246.png" alt="image-20200808012956246" style="zoom: 50%;" />
 
@@ -88,11 +88,11 @@ This block of black text is the new code that we need to paste into the userscri
 
 Then point Firefox to the new *champion.json* file. Open the console. Paste the following code and press enter.
 
-<code>INPUT = JSON.parse(this.JSONView.json.data).data;
+<pre>INPUT = JSON.parse(this.JSONView.json.data).data;
 OUTPUT = "document.ChampionCodes = {";
 for(name in INPUT)
     OUTPUT += '"' + name + '":' + INPUT[name].key + ",";
-console.log( OUTPUT.slice(0,-1) + "};" );</code>
+console.log( OUTPUT.slice(0,-1) + "};" );</pre>
 
 
 Copy the output.
