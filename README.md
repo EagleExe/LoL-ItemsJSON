@@ -50,18 +50,18 @@ Close the Tampermonkey tab and then navigate to the Mobafire page that has the i
 
 If there are updates to the game that add more items and champions, the userscript may need to be updated to include the new corresponding codes. In other words the following two lines of the code will need to be replaced.
 
-```document.ItemCodes = {"Boots of Speed":1001,"Faerie Charm":1004,"Rejuvenation Bead":1006,"Giant's Belt":1011,"Cloak of Agility":1018,"Blasting Wand":1026,"Sapphire Crystal":1027,"Ruby Crystal":1028,"Cloth Armor":1029,"Chain Vest":1031,"Null-Magic Mantle":1033 …```
+`document.ItemCodes = {"Boots of Speed":1001,"Faerie Charm":1004,"Rejuvenation Bead":1006,"Giant's Belt":1011,"Cloak of Agility":1018,"Blasting Wand":1026,"Sapphire Crystal":1027,"Ruby Crystal":1028,"Cloth Armor":1029,"Chain Vest":1031,"Null-Magic Mantle":1033 …`
 
 and
 
-```document.ChampionCodes = {"Aatrox":266,"Ahri":103,"Akali":84,"Alistar":12,"Amumu":32,"Anivia":34,"Annie":1,"Aphelios":523,"Ashe":22,"AurelionSol":136,"Azir":268,"Bard":432,"Blitzcrank":53,"Brand":63,"Braum":201,"Caitlyn":51,"Camille":164,"Cassiopeia":69,"Chogath":31,"Corki":42,"Darius":122,"Diana":131,"Draven": …```
+`document.ChampionCodes = {"Aatrox":266,"Ahri":103,"Akali":84,"Alistar":12,"Amumu":32,"Anivia":34,"Annie":1,"Aphelios":523,"Ashe":22,"AurelionSol":136,"Azir":268,"Bard":432,"Blitzcrank":53,"Brand":63,"Braum":201,"Caitlyn":51,"Camille":164,"Cassiopeia":69,"Chogath":31,"Corki":42,"Darius":122,"Diana":131,"Draven": …`
 
 *Note if Mobafire changes the design of their site then the various <u>querySelector / querySelectorAll / getElementById</u> commands in the userscript may need to be modified, but a tutorial for how to do that would be much too long for me to make right now.*
 
-I found the complete list of item codes inside the following file,
-https://ddragon.leagueoflegends.com/cdn/10.15.1/data/en_US/item.json
-and I found the complete list of champion codes in the following file.
-https://ddragon.leagueoflegends.com/cdn/10.15.1/data/en_US/champion.json
+I found the complete list of item codes inside the following file,<br>
+https://ddragon.leagueoflegends.com/cdn/10.15.1/data/en_US/item.json<br>
+and I found the complete list of champion codes in the following file.<br>
+https://ddragon.leagueoflegends.com/cdn/10.15.1/data/en_US/champion.json<br>
 
 *I'm new here so I don't know who ddragon is or if this is the official source for the latest updates for developers. These are just the only sources that I was able to find after a short while of poking around on the interwebs. The current version of LoL is 10.16, but I don't think there where any new items or champions in this update, so these version 10.15.1 files should work.*
 
@@ -69,12 +69,12 @@ These JSON files have a bunch of data that we don't need, so I made scripts to c
 
 Point Firefox to the *items.json* file (*there will be a new URL for a newer version of LoL that you will have to find*) and open the console by pressing CTRL+SHIFT+I or F12. Paste the following commands.
 
-```INPUT = JSON.parse(this.JSONView.json.data).data;
+<code>INPUT = JSON.parse(this.JSONView.json.data).data;
 String.prototype.removeTrinket=function(){return this.replace(/ \([\D\d]*\)/gi,"")}
 OUTPUT = "document.ItemCodes = {";
 for(code in INPUT)
     OUTPUT += '"' + INPUT[code].name.removeTrinket() + '":' + code + ",";
-console.log( OUTPUT.slice(0,-1) + "};" ); ```
+console.log( OUTPUT.slice(0,-1) + "};" );</code>
 
 <img src="images\image-20200808012956246.png" alt="image-20200808012956246" style="zoom: 50%;" />
 
@@ -88,11 +88,12 @@ This block of black text is the new code that we need to paste into the userscri
 
 Then point Firefox to the new *champion.json* file. Open the console. Paste the following code and press enter.
 
-```INPUT = JSON.parse(this.JSONView.json.data).data;
+<code>INPUT = JSON.parse(this.JSONView.json.data).data;
 OUTPUT = "document.ChampionCodes = {";
 for(name in INPUT)
     OUTPUT += '"' + name + '":' + INPUT[name].key + ",";
-console.log( OUTPUT.slice(0,-1) + "};" ); ```
+console.log( OUTPUT.slice(0,-1) + "};" );</code>
+
 
 Copy the output.
 
