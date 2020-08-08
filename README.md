@@ -68,12 +68,12 @@ These JSON files have a bunch of data that we don't need, so I made scripts to c
 
 Point Firefox to the *items.json* file (*there will be a new URL for a newer version of LoL that you will have to find*) and open the console by pressing CTRL+SHIFT+I or F12. Paste the following commands.
 
-`INPUT = JSON.parse(this.JSONView.json.data).data;
+<code>INPUT = JSON.parse(this.JSONView.json.data).data;
 String.prototype.removeTrinket=function(){return this.replace(/ \([\D\d]*\)/gi,"")};
 OUTPUT = "document.ItemCodes = {";
 for(code in INPUT)
 	OUTPUT += '"' + INPUT[code].name.removeTrinket() + '":' + code + ",";
-console.log( OUTPUT.slice(0,-1) + "};" );`
+console.log( OUTPUT.slice(0,-1) + "};" );</code>I
 
 <img src="images\image-20200808012956246.png" alt="image-20200808012956246"  />
 
