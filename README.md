@@ -84,7 +84,7 @@ Press enter and Firefox will spit out the data that we are looking for.
 
 This block of black text is the new code that we need to paste into the userscript, so all of this text starting with `document.ItemCodes = {` all the way down the `};` at the end--- copy it and paste it into the userscript replacing the old data. 
 
-#### Now lets extract the data from champions.json >>>>>>>>
+#### Now lets extract the data from champions.json >>>>>>>
 
 Then point Firefox to the new *champion.json* file. Open the console. Paste the following code and press enter.
 
