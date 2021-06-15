@@ -5,7 +5,7 @@ To update to the latest champs all you need to do is
 2. Install nodejs
 3. Open the command prompt or terminal in cloned folder
 4. type `git checkout dev && cd getItems`
-5. type `npm install && node start get-vars`
+5. type `npm install && node run get-vars`
 6. Wait a few seconds. There will be an output on the terminal like `Latest Version =>  11.12.1`
 7. When you see `success`
 8. Browse to data folder and look for `vars-{whatever verion was output}.js`
