@@ -8,95 +8,99 @@
 // @include     https://www.probuilds.net/guide/show/*
 // ==/UserScript==
 
-document.ItemCodes = {"Boots":1001,"Faerie Charm":1004,"Rejuvenation Bead":1006,"Giant's Belt":1011,"Cloak of Agility":1018,"Blasting Wand":1026,"Sapphire Crystal":1027,"Ruby Crystal":1028,"Cloth Armor":1029,"Chain Vest":1031,"Null-Magic Mantle":1033,"Emberknife":1035,"Long Sword":1036,"Pickaxe":1037,"B. F. Sword":1038,"Hailblade":1039,"Dagger":1042,"Recurve Bow":1043,"Amplifying Tome":1052,"Vampiric Scepter":1053,"Doran's Shield":1054,"Doran's Blade":1055,"Doran's Ring":1056,"Negatron Cloak":1057,"Needlessly Large Rod":1058,"Dark Seal":1082,"Cull":1083,"Health Potion":2003,"Total Biscuit of Everlasting Will":2010,"Kircheis Shard":2015,"Refillable Potion":2031,"Corrupting Potion":2033,"Guardian's Horn":2051,"Poro-Snax":2052,"Control Ward":2055,"Shurelya's Battlesong":2065,"Elixir of Iron":2138,"Elixir of Sorcery":2139,"Elixir of Wrath":2140,"Minion Dematerializer":2403,"Commencing Stopwatch":2419,"Stopwatch":2420,"Broken Stopwatch":2421,"Slightly Magical Footwear":2422,"Perfectly Timed Stopwatch":2423,"Broken Stopwatch":2424,"Abyssal Mask":3001,"Archangel's Staff":3003,"Manamune":3004,"Berserker's Greaves":3006,"Boots of Swiftness":3009,"Chemtech Putrifier":3011,"Sorcerer's Shoes":3020,"Glacial Buckler":3024,"Guardian Angel":3026,"Infinity Edge":3031,"Mortal Reminder":3033,"Last Whisper":3035,"Lord Dominik's Regards":3036,"Seraph's Embrace":3040,"Mejai's Soulstealer":3041,"Muramana":3042,"Muramana":3043,"Phage":3044,"Phantom Dancer":3046,"Plated Steelcaps":3047,"Seraph's Embrace":3048,"Zeke's Convergence":3050,"Hearthbound Axe":3051,"Sterak's Gage":3053,"Sheen":3057,"Spirit Visage":3065,"Winged Moonplate":3066,"Kindlegem":3067,"Sunfire Aegis":3068,"Tear of the Goddess":3070,"Black Cleaver":3071,"Bloodthirster":3072,"Ravenous Hydra":3074,"Thornmail":3075,"Bramble Vest":3076,"Tiamat":3077,"Trinity Force":3078,"Warden's Mail":3082,"Warmog's Armor":3083,"Runaan's Hurricane":3085,"Zeal":3086,"Rabadon's Deathcap":3089,"Wit's End":3091,"Rapid Firecannon":3094,"Stormrazor":3095,"Lich Bane":3100,"Banshee's Veil":3102,"Aegis of the Legion":3105,"Redemption":3107,"Fiendish Codex":3108,"Knight's Vow":3109,"Frozen Heart":3110,"Mercury's Treads":3111,"Guardian's Orb":3112,"Aether Wisp":3113,"Forbidden Idol":3114,"Nashor's Tooth":3115,"Rylai's Crystal Scepter":3116,"Mobility Boots":3117,"Executioner's Calling":3123,"Guinsoo's Rageblade":3124,"Caulfield's Warhammer":3133,"Serrated Dirk":3134,"Void Staff":3135,"Mercurial Scimitar":3139,"Quicksilver Sash":3140,"Youmuu's Ghostblade":3142,"Randuin's Omen":3143,"Hextech Alternator":3145,"Hextech Rocketbelt":3152,"Blade of The Ruined King":3153,"Hexdrinker":3155,"Maw of Malmortius":3156,"Zhonya's Hourglass":3157,"Ionian Boots of Lucidity":3158,"Morellonomicon":3165,"Guardian's Blade":3177,"Umbral Glaive":3179,"Sanguine Blade":3181,"Guardian's Hammer":3184,"Locket of the Iron Solari":3190,"Seeker's Armguard":3191,"Gargoyle Stoneplate":3193,"Spectre's Cowl":3211,"Mikael's Blessing":3222,"Scarecrow Effigy":3330,"Stealth Ward":3340,"Farsight Alteration":3363,"Oracle Lens":3364,"Your Cut":3400,"Ardent Censer":3504,"Essence Reaver":3508,"Eye of the Herald":3513,"Kalista's Black Spear":3599,"Kalista's Black Spear":3600,"Dead Man's Plate":3742,"Titanic Hydra":3748,"Crystalline Bracer":3801,"Lost Chapter":3802,"Edge of Night":3814,"Spellthief's Edge":3850,"Frostfang":3851,"Shard of True Ice":3853,"Steel Shoulderguards":3854,"Runesteel Spaulders":3855,"Pauldrons of Whiterock":3857,"Relic Shield":3858,"Targon's Buckler":3859,"Bulwark of the Mountain":3860,"Spectral Sickle":3862,"Harrowing Crescent":3863,"Black Mist Scythe":3864,"Oblivion Orb":3916,"Imperial Mandate":4005,"Force of Nature":4401,"The Golden Spatula":4403,"Horizon Focus":4628,"Cosmic Drive":4629,"Blighting Jewel":4630,"Verdant Barrier":4632,"Riftmaker":4633,"Leeching Leer":4635,"Night Harvester":4636,"Demonic Embrace":4637,"Watchful Wardstone":4638,"Stirring Wardstone":4641,"Bandleglass Mirror":4642,"Vigilant Wardstone":4643,"Ironspike Whip":6029,"Silvermere Dawn":6035,"Death's Dance":6333,"Chempunk Chainsword":6609,"Staff of Flowing Water":6616,"Moonstone Renewer":6617,"Goredrinker":6630,"Stridebreaker":6631,"Divine Sunderer":6632,"Liandry's Anguish":6653,"Luden's Tempest":6655,"Everfrost":6656,"Bami's Cinder":6660,"Frostfire Gauntlet":6662,"Turbo Chemtank":6664,"Noonquiver":6670,"Galeforce":6671,"Kraken Slayer":6672,"Immortal Shieldbow":6673,"Navori Quickblades":6675,"The Collector":6676,"Rageknife":6677,"Duskblade of Draktharr":6691,"Eclipse":6692,"Prowler's Claw":6693,"Serylda's Grudge":6694,"Serpent's Fang":6695,"Botas":1001,"Amuleto de las hadas":1004,"Perla de rejuvenecimiento":1006,"CinturÛn de gigante":1011,"Capa de agilidad":1018,"Vara explosiva":1026,"Cristal de zafiro":1027,"Cristal de rubÌ":1028,"Armadura de tela":1029,"Chaleco de cadenas":1031,"Manto de anulaciÛn de magia":1033,"Cuchillo de ascuas":1035,"Espada larga":1036,"Pico":1037,"EspadÛn":1038,"Espada de granizo":1039,"Daga":1042,"Arco curvo":1043,"Tomo amplificador":1052,"Cetro vampÌrico":1053,"Escudo de Doran":1054,"Espada de Doran":1055,"Anillo de Doran":1056,"Capa negatrÛn":1057,"Vara innecesariamente grande":1058,"Sello oscuro":1082,"Preferencia":1083,"PociÛn de vida":2003,"Galleta de la voluntad eterna":2010,"Fragmento de Kircheis":2015,"PociÛn reutilizable":2031,"PociÛn de corrupciÛn":2033,"Cuerno del guardi·n":2051,"Snack para poros":2052,"Guardi·n de control":2055,"CanciÛn de batalla de Shurelya":2065,"Elixir de hierro":2138,"Elixir de brujerÌa":2139,"Elixir de cÛlera":2140,"Desmaterializador de s˙bditos":2403,"CronÛmetro iniciado":2419,"CronÛmetro":2420,"CronÛmetro estropeado":2421,"Calzado ligeramente m·gico":2422,"CronÛmetro oportuno":2423,"CronÛmetro estropeado":2424,"M·scara abisal":3001,"BastÛn del arc·ngel":3003,"Manamune":3004,"Grebas de berserker":3006,"Botas de rapidez":3009,"Putrificador tecnoquÌmico":3011,"Botas de hechicero":3020,"Broquel glacial":3024,"¡ngel de la guarda":3026,"Filo infinito":3031,"Recordatorio letal":3033,"⁄ltimas palabras":3035,"Recuerdos de lord Dominik":3036,"Abrazo del serafÌn":3040,"Robaalmas de Mejai":3041,"Muramana":3042,"Muramana":3043,"BacteriÛfago":3044,"BailarÌn espectral":3046,"Botas blindadas":3047,"Abrazo del serafÌn":3048,"Convergencia de Zeke":3050,"Hacha hogareÒa":3051,"Calibrador de Sterak":3053,"Brillo":3057,"Rostro espiritual":3065,"Armadura lunar alada":3066,"Gema avivadora":3067,"…gida de fuego solar":3068,"L·grima de la diosa":3070,"Cuchilla negra":3071,"Sanguinaria":3072,"Hidra voraz":3074,"Malla de espinas":3075,"Chaleco de zarzas":3076,"Tiamat":3077,"Fuerza de trinidad":3078,"Malla del guardi·n":3082,"Armadura de Warmog":3083,"Hurac·n de Runaan":3085,"Fervor":3086,"Sombrero mortal de Rabadon":3089,"Final del ingenio":3091,"CaÒÛn de fuego r·pido":3094,"Navaja de asalto":3095,"PerdiciÛn del liche":3100,"Velo del hada de la muerte":3102,"ProtecciÛn de la legiÛn":3105,"RedenciÛn":3107,"CÛdice diabÛlico":3108,"Promesa de caballero":3109,"CorazÛn de hielo":3110,"Botas de mercurio":3111,"Orbe del guardi·n":3112,"Brisa de Èter":3113,"Õdolo prohibido":3114,"Diente de Nashor":3115,"Cetro de cristal de Rylai":3116,"Botas de movilidad":3117,"Llamada del verdugo":3123,"Hoja de furia de Guinsoo":3124,"Martillo de guerra de Caulfield":3133,"Daga dentada":3134,"BastÛn del VacÌo":3135,"Cimitarra mercurial":3139,"FajÌn de mercurio":3140,"Filo fantasmal de Youmuu":3142,"Presagio de Randuin":3143,"Alternador hextech":3145,"Cintomisil hextech":3152,"Hoja del rey arruinado":3153,"Sorbemaleficios":3155,"Fauces de Malmortius":3156,"Reloj de arena de Zhonya":3157,"Botas jonias de la lucidez":3158,"MorellonomicÛn":3165,"Espada del guardi·n":3177,"Guja sombrÌa":3179,"Hoja carmesÌ":3181,"Martillo del guardi·n":3184,"MedallÛn de los Solari de Hierro":3190,"Brazalete de la buscadora":3191,"Protector pÈtreo de g·rgola":3193,"H·bito del espectro":3211,"BendiciÛn de Mikael":3222,"Figura de espantap·jaros":3330,"Guardi·n invisible":3340,"VisiÛn lejana modificada":3363,"Lente del or·culo":3364,"Tu parte":3400,"Incensario ardiente":3504,"Segador de esencia":3508,"Ojo del Heraldo":3513,"La lanza negra de Kalista":3599,"La lanza negra de Kalista":3600,"Coraza del muerto":3742,"Hidra tit·nica":3748,"Brazal cristalino":3801,"CapÌtulo perdido":3802,"Filo de la noche":3814,"Daga de hechicero":3850,"Colmillo de escarcha":3851,"Fragmento de Hielo Puro":3853,"Hombreras de acero":3854,"Hombreras de acero r˙nico":3855,"Hombreras de Rocablanca":3857,"Escudo reliquia":3858,"Broquel de Targon":3859,"Baluarte de la montaÒa":3860,"Hoz espectral":3862,"Creciente de Harrowing":3863,"GuadaÒa de la Niebla Negra":3864,"Orbe del olvido":3916,"Mandato imperial":4005,"Fuerza de la naturaleza":4401,"Esp·tula dorada":4403,"PrecisiÛn infalible":4628,"Impulso cÛsmico":4629,"Joya de la plaga":4630,"Barrera frondosa":4632,"Creagrietas":4633,"Lapa maliciosa":4635,"Cosechador nocturno":4636,"Abrazo demonÌaco":4637,"Piedra de guardianes atenta":4638,"Piedra de visiÛn inquieta":4641,"Espejo de cristal de Bandle":4642,"Piedra de visiÛn vigilante":4643,"L·tigo puntahierro":6029,"Amanecer de Meraplata":6035,"Baile de la muerte":6333,"Mecanoespada punki":6609,"BastÛn de aguas fluidas":6616,"RenovaciÛn de piedra lunar":6617,"Chupasangre":6630,"Cortasendas":6631,"Desgarrador divino":6632,"Desconsuelo de Liandry":6653,"Tempestad de Luden":6655,"Escarcha eterna":6656,"Rescoldo de Bami":6660,"Guantelete de fuego escarchado":6662,"Quimiotanque turbo":6664,"Carcaj del mediodÌa":6670,"Viento huracanado":6671,"Verdugo de krakens":6672,"Arcoescudo inmortal":6673,"Filoveloz de Navori":6675,"Recaudadora":6676,"Cuchillo de ira":6677,"Filoscuro de Draktharr":6691,"Eclipse":6692,"Garra de merodeador":6693,"Rencor de Serylda":6694,"Colmillo de serpiente":6695}; // includes both en_US and es_ES data
-document.ChampionCodes = {"Aatrox":266,"Ahri":103,"Akali":84,"Alistar":12,"Amumu":32,"Anivia":34,"Annie":1,"Aphelios":523,"Ashe":22,"AurelionSol":136,"Azir":268,"Bard":432,"Blitzcrank":53,"Brand":63,"Braum":201,"Caitlyn":51,"Camille":164,"Cassiopeia":69,"Chogath":31,"Corki":42,"Darius":122,"Diana":131,"Draven":119,"DrMundo":36,"Ekko":245,"Elise":60,"Evelynn":28,"Ezreal":81,"Fiddlesticks":9,"Fiora":114,"Fizz":105,"Galio":3,"Gangplank":41,"Garen":86,"Gnar":150,"Gragas":79,"Graves":104,"Hecarim":120,"Heimerdinger":74,"Illaoi":420,"Irelia":39,"Ivern":427,"Janna":40,"JarvanIV":59,"Jax":24,"Jayce":126,"Jhin":202,"Jinx":222,"Kaisa":145,"Kalista":429,"Karma":43,"Karthus":30,"Kassadin":38,"Katarina":55,"Kayle":10,"Kayn":141,"Kennen":85,"Khazix":121,"Kindred":203,"Kled":240,"KogMaw":96,"Leblanc":7,"LeeSin":64,"Leona":89,"Lillia":876,"Lissandra":127,"Lucian":236,"Lulu":117,"Lux":99,"Malphite":54,"Malzahar":90,"Maokai":57,"MasterYi":11,"MissFortune":21,"MonkeyKing":62,"Mordekaiser":82,"Morgana":25,"Nami":267,"Nasus":75,"Nautilus":111,"Neeko":518,"Nidalee":76,"Nocturne":56,"Nunu":20,"Olaf":2,"Orianna":61,"Ornn":516,"Pantheon":80,"Poppy":78,"Pyke":555,"Qiyana":246,"Quinn":133,"Rakan":497,"Rammus":33,"RekSai":421,"Rell":526,"Renekton":58,"Rengar":107,"Riven":92,"Rumble":68,"Ryze":13,"Samira":360,"Sejuani":113,"Senna":235,"Seraphine":147,"Sett":875,"Shaco":35,"Shen":98,"Shyvana":102,"Singed":27,"Sion":14,"Sivir":15,"Skarner":72,"Sona":37,"Soraka":16,"Swain":50,"Sylas":517,"Syndra":134,"TahmKench":223,"Taliyah":163,"Talon":91,"Taric":44,"Teemo":17,"Thresh":412,"Tristana":18,"Trundle":48,"Tryndamere":23,"TwistedFate":4,"Twitch":29,"Udyr":77,"Urgot":6,"Varus":110,"Vayne":67,"Veigar":45,"Velkoz":161,"Vi":254,"Viktor":112,"Vladimir":8,"Volibear":106,"Warwick":19,"Xayah":498,"Xerath":101,"XinZhao":5,"Yasuo":157,"Yone":777,"Yorick":83,"Yuumi":350,"Zac":154,"Zed":238,"Ziggs":115,"Zilean":26,"Zoe":142,"Zyra":143};
-document.NeedToAddSpaces = {"AurelionSol":"Aurelion Sol","DrMundo":"Dr. Mundo","JarvanIV":"Jarvan IV","KogMaw":"Kog'Maw","LeeSin":"Lee Sin","MasterYi":"Master Yi","MissFortune":"Miss Fortune","MonkeyKing":"Monkey King","RekSai":"Rek'Sai","TahmKench":"Tahm Kench","XinZhao":"Xin Zhao"};
+// REPLACE HERE START
 
-String.prototype.has=function(findWhat){return this.indexOf(findWhat)!=-1}
-String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g,"")}
-String.prototype.replaceQuotes=function(){return this.replace(/"/g,'\\"')}
-String.prototype.removeTags=function(){return this.replace(/<[\D\d]*>/g,"")}
-String.prototype.removeSpaces=function(){return this.replace(/\s/g,"")}
-String.prototype.removeApostrophe=function(){return this.replace(/'/g,'')}
-String.prototype.removeParenthesis=function(){return this.replace(/ \([\D\d]*\)/gi,"")}
+document.ItemCodes = {"Boots":1001,"Faerie Charm":1004,"Rejuvenation Bead":1006,"Giant's Belt":1011,"Cloak of Agility":1018,"Blasting Wand":1026,"Sapphire Crystal":1027,"Ruby Crystal":1028,"Cloth Armor":1029,"Chain Vest":1031,"Null-Magic Mantle":1033,"Emberknife":1035,"Long Sword":1036,"Pickaxe":1037,"B. F. Sword":1038,"Hailblade":1039,"Dagger":1042,"Recurve Bow":1043,"Amplifying Tome":1052,"Vampiric Scepter":1053,"Doran's Shield":1054,"Doran's Blade":1055,"Doran's Ring":1056,"Negatron Cloak":1057,"Needlessly Large Rod":1058,"Dark Seal":1082,"Cull":1083,"Health Potion":2003,"Total Biscuit of Everlasting Will":2010,"Kircheis Shard":2015,"Refillable Potion":2031,"Corrupting Potion":2033,"Guardian's Horn":2051,"Poro-Snax":2052,"Control Ward":2055,"Shurelya's Battlesong":2065,"Elixir of Iron":2138,"Elixir of Sorcery":2139,"Elixir of Wrath":2140,"Minion Dematerializer":2403,"Commencing Stopwatch":2419,"Stopwatch":2420,"Broken Stopwatch":2424,"Slightly Magical Footwear":2422,"Perfectly Timed Stopwatch":2423,"Abyssal Mask":3001,"Archangel's Staff":3003,"Manamune":3004,"Berserker's Greaves":3006,"Boots of Swiftness":3009,"Chemtech Putrifier":3011,"Sorcerer's Shoes":3020,"Glacial Buckler":3024,"Guardian Angel":3026,"Infinity Edge":3031,"Mortal Reminder":3033,"Last Whisper":3035,"Lord Dominik's Regards":3036,"Seraph's Embrace":3040,"Mejai's Soulstealer":3041,"Muramana":3042,"Phage":3044,"Phantom Dancer":3046,"Plated Steelcaps":3047,"Zeke's Convergence":3050,"Hearthbound Axe":3051,"Sterak's Gage":3053,"Sheen":3057,"Spirit Visage":3065,"Winged Moonplate":3066,"Kindlegem":3067,"Sunfire Aegis":3068,"Tear of the Goddess":3070,"Black Cleaver":3071,"Bloodthirster":3072,"Ravenous Hydra":3074,"Thornmail":3075,"Bramble Vest":3076,"Tiamat":3077,"Trinity Force":3078,"Warden's Mail":3082,"Warmog's Armor":3083,"Runaan's Hurricane":3085,"Zeal":3086,"Rabadon's Deathcap":3089,"Wit's End":3091,"Rapid Firecannon":3094,"Stormrazor":3095,"Lich Bane":3100,"Banshee's Veil":3102,"Aegis of the Legion":3105,"Redemption":3107,"Fiendish Codex":3108,"Knight's Vow":3109,"Frozen Heart":3110,"Mercury's Treads":3111,"Guardian's Orb":3112,"Aether Wisp":3113,"Forbidden Idol":3114,"Nashor's Tooth":3115,"Rylai's Crystal Scepter":3116,"Mobility Boots":3117,"Executioner's Calling":3123,"Guinsoo's Rageblade":3124,"Caulfield's Warhammer":3133,"Serrated Dirk":3134,"Void Staff":3135,"Mercurial Scimitar":3139,"Quicksilver Sash":3140,"Youmuu's Ghostblade":3142,"Randuin's Omen":3143,"Hextech Alternator":3145,"Hextech Rocketbelt":3152,"Blade of The Ruined King":3153,"Hexdrinker":3155,"Maw of Malmortius":3156,"Zhonya's Hourglass":3157,"Ionian Boots of Lucidity":3158,"Morellonomicon":3165,"Guardian's Blade":3177,"Umbral Glaive":3179,"Sanguine Blade":3181,"Guardian's Hammer":3184,"Locket of the Iron Solari":3190,"Seeker's Armguard":3191,"Gargoyle Stoneplate":3193,"Spectre's Cowl":3211,"Mikael's Blessing":3222,"Scarecrow Effigy":3330,"Stealth Ward":3340,"Farsight Alteration":3363,"Oracle Lens":3364,"Your Cut":3400,"Ardent Censer":3504,"Essence Reaver":3508,"Eye of the Herald":3513,"Kalista's Black Spear":3600,"Dead Man's Plate":3742,"Titanic Hydra":3748,"Crystalline Bracer":3801,"Lost Chapter":3802,"Edge of Night":3814,"Spellthief's Edge":3850,"Frostfang":3851,"Shard of True Ice":3853,"Steel Shoulderguards":3854,"Runesteel Spaulders":3855,"Pauldrons of Whiterock":3857,"Relic Shield":3858,"Targon's Buckler":3859,"Bulwark of the Mountain":3860,"Spectral Sickle":3862,"Harrowing Crescent":3863,"Black Mist Scythe":3864,"Oblivion Orb":3916,"Imperial Mandate":4005,"Force of Nature":4401,"The Golden Spatula":4403,"Horizon Focus":4628,"Cosmic Drive":4629,"Blighting Jewel":4630,"Verdant Barrier":4632,"Riftmaker":4633,"Leeching Leer":4635,"Night Harvester":4636,"Demonic Embrace":4637,"Watchful Wardstone":4638,"Bandleglass Mirror":4642,"Vigilant Wardstone":4643,"Ironspike Whip":6029,"Silvermere Dawn":6035,"Death's Dance":6333,"Chempunk Chainsword":6609,"Staff of Flowing Water":6616,"Moonstone Renewer":6617,"Goredrinker":6630,"Stridebreaker":6631,"Divine Sunderer":6632,"Liandry's Anguish":6653,"Luden's Tempest":6655,"Everfrost":6656,"Bami's Cinder":6660,"Frostfire Gauntlet":6662,"Turbo Chemtank":6664,"Noonquiver":6670,"Galeforce":6671,"Kraken Slayer":6672,"Immortal Shieldbow":6673,"Navori Quickblades":6675,"The Collector":6676,"Rageknife":6677,"Duskblade of Draktharr":6691,"Eclipse":6692,"Prowler's Claw":6693,"Serylda's Grudge":6694,"Serpent's Fang":6695,"Sandshrike's Claw":7000,"Syzygy":7001,"Draktharr's Shadowcarver":7002,"Turbocharged Hexperiment":7003,"Forgefire Crest":7004,"Rimeforged Grasp":7005,"Typhoon":7006,"Wyrmfallen Sacrifice":7007,"Bloodward":7008,"Icathia's Curse":7009,"Vespertide":7010,"Upgraded Aeropack":7011,"Liandry's Lament":7012,"Eye of Luden":7013,"Eternal Winter":7014,"Ceaseless Hunger":7015,"Dreamshatter":7016,"Deicide":7017,"Infinity Force":7018,"Reliquary of the Golden Dawn":7019,"Shurelya's Requiem":7020,"Starcaster":7021,"Seat of Command":7022,"Botas":1001,"Amuleto de las hadas":1004,"Perla de rejuvenecimiento":1006,"Cintur√≥n de gigante":1011,"Capa de agilidad":1018,"Vara explosiva":1026,"Cristal de zafiro":1027,"Cristal de rub√≠":1028,"Armadura de tela":1029,"Chaleco de cadenas":1031,"Manto de anulaci√≥n de magia":1033,"Cuchillo de ascuas":1035,"Espada larga":1036,"Pico":1037,"Espad√≥n":1038,"Espada de granizo":1039,"Daga":1042,"Arco curvo":1043,"Tomo amplificador":1052,"Cetro vamp√≠rico":1053,"Escudo de Doran":1054,"Espada de Doran":1055,"Anillo de Doran":1056,"Capa negatr√≥n":1057,"Vara innecesariamente grande":1058,"Sello oscuro":1082,"Preferencia":1083,"Poci√≥n de vida":2003,"Galleta de la voluntad eterna":2010,"Fragmento de Kircheis":2015,"Poci√≥n reutilizable":2031,"Poci√≥n de corrupci√≥n":2033,"Cuerno del guardi√°n":2051,"Snack para poros":2052,"Guardi√°n de control":2055,"Canci√≥n de batalla de Shurelya":2065,"Elixir de hierro":2138,"Elixir de brujer√≠a":2139,"Elixir de c√≥lera":2140,"Desmaterializador de s√∫bditos":2403,"Cron√≥metro iniciado":2419,"Cron√≥metro":2420,"Cron√≥metro estropeado":2424,"Calzado ligeramente m√°gico":2422,"Cron√≥metro oportuno":2423,"M√°scara abisal":3001,"Bast√≥n del arc√°ngel":3003,"Grebas de berserker":3006,"Botas de rapidez":3009,"Putrificador tecnoqu√≠mico":3011,"Botas de hechicero":3020,"Broquel glacial":3024,"√Ångel de la guarda":3026,"Filo infinito":3031,"Recordatorio letal":3033,"√öltimas palabras":3035,"Recuerdos de lord Dominik":3036,"Abrazo del seraf√≠n":3040,"Robaalmas de Mejai":3041,"Bacteri√≥fago":3044,"Bailar√≠n espectral":3046,"Botas blindadas":3047,"Convergencia de Zeke":3050,"Hacha hogare√±a":3051,"Calibrador de Sterak":3053,"Brillo":3057,"Rostro espiritual":3065,"Armadura lunar alada":3066,"Gema avivadora":3067,"√âgida de fuego solar":3068,"L√°grima de la diosa":3070,"Cuchilla negra":3071,"Sanguinaria":3072,"Hidra voraz":3074,"Malla de espinas":3075,"Chaleco de zarzas":3076,"Fuerza de trinidad":3078,"Malla del guardi√°n":3082,"Armadura de Warmog":3083,"Hurac√°n de Runaan":3085,"Fervor":3086,"Sombrero mortal de Rabadon":3089,"Final del ingenio":3091,"Ca√±√≥n de fuego r√°pido":3094,"Navaja de asalto":3095,"Perdici√≥n del liche":3100,"Velo del hada de la muerte":3102,"Protecci√≥n de la legi√≥n":3105,"Redenci√≥n":3107,"C√≥dice diab√≥lico":3108,"Promesa de caballero":3109,"Coraz√≥n de hielo":3110,"Botas de mercurio":3111,"Orbe del guardi√°n":3112,"Brisa de √©ter":3113,"√çdolo prohibido":3114,"Diente de Nashor":3115,"Cetro de cristal de Rylai":3116,"Botas de movilidad":3117,"Llamada del verdugo":3123,"Hoja de furia de Guinsoo":3124,"Martillo de guerra de Caulfield":3133,"Daga dentada":3134,"Bast√≥n del Vac√≠o":3135,"Cimitarra mercurial":3139,"Faj√≠n de mercurio":3140,"Filo fantasmal de Youmuu":3142,"Presagio de Randuin":3143,"Alternador hextech":3145,"Cintomisil hextech":3152,"Hoja del rey arruinado":3153,"Sorbemaleficios":3155,"Fauces de Malmortius":3156,"Reloj de arena de Zhonya":3157,"Botas jonias de la lucidez":3158,"Morellonomic√≥n":3165,"Espada del guardi√°n":3177,"Guja sombr√≠a":3179,"Hoja carmes√≠":3181,"Martillo del guardi√°n":3184,"Medall√≥n de los Solari de Hierro":3190,"Brazalete de la buscadora":3191,"Protector p√©treo de g√°rgola":3193,"H√°bito del espectro":3211,"Bendici√≥n de Mikael":3222,"Figura de espantap√°jaros":3330,"Guardi√°n invisible":3340,"Visi√≥n lejana modificada":3363,"Lente del or√°culo":3364,"Tu parte":3400,"Incensario ardiente":3504,"Segador de esencia":3508,"Ojo del Heraldo":3513,"La lanza negra de Kalista":3600,"Coraza del muerto":3742,"Hidra tit√°nica":3748,"Brazal cristalino":3801,"Cap√≠tulo perdido":3802,"Filo de la noche":3814,"Daga de hechicero":3850,"Colmillo de escarcha":3851,"Fragmento de Hielo Puro":3853,"Hombreras de acero":3854,"Hombreras de acero r√∫nico":3855,"Hombreras de Rocablanca":3857,"Escudo reliquia":3858,"Broquel de Targon":3859,"Baluarte de la monta√±a":3860,"Hoz espectral":3862,"Creciente de Harrowing":3863,"Guada√±a de la Niebla Negra":3864,"Orbe del olvido":3916,"Mandato imperial":4005,"Fuerza de la naturaleza":4401,"Esp√°tula dorada":4403,"Precisi√≥n infalible":4628,"Impulso c√≥smico":4629,"Joya de la plaga":4630,"Barrera frondosa":4632,"Creagrietas":4633,"Lapa maliciosa":4635,"Cosechador nocturno":4636,"Abrazo demon√≠aco":4637,"Piedra de guardianes atenta":4638,"Espejo de cristal de Bandle":4642,"Piedra de visi√≥n vigilante":4643,"L√°tigo puntahierro":6029,"Amanecer de Meraplata":6035,"Baile de la muerte":6333,"Mecanoespada punki":6609,"Bast√≥n de aguas fluidas":6616,"Renovaci√≥n de piedra lunar":6617,"Chupasangre":6630,"Cortasendas":6631,"Desgarrador divino":6632,"Desconsuelo de Liandry":6653,"Tempestad de Luden":6655,"Escarcha eterna":6656,"Rescoldo de Bami":6660,"Guantelete de fuego escarchado":6662,"Quimiotanque turbo":6664,"Carcaj del mediod√≠a":6670,"Viento huracanado":6671,"Verdugo de krakens":6672,"Arcoescudo inmortal":6673,"Filoveloz de Navori":6675,"Recaudadora":6676,"Cuchillo de ira":6677,"Filoscuro de Draktharr":6691,"Garra de merodeador":6693,"Rencor de Serylda":6694,"Colmillo de serpiente":6695,"Garra de ave de las arenas":7000,"Sizigia":7001,"Tallador de sombras de Draktharr":7002,"Hexperimento turbocargado":7003,"Emblema de fuego de forja":7004,"Tenaza escarchada":7005,"Tif√≥n":7006,"Sacrificio del ca√≠do":7007,"Guardi√°n sangriento":7008,"Maldici√≥n de Icathia":7009,"Marea vespertina":7010,"Mochila a√©rea mejorada":7011,"Lamento de Liandry":7012,"Ojo de Luden":7013,"Invierno eterno":7014,"Hambre incesante":7015,"Destrozasue√±os":7016,"Deicidio":7017,"Fuerza del infinito":7018,"Relicario del Alba Dorada":7019,"R√©quiem de Shurelya":7020,"Lanzaestrellas":7021,"Asiento de mando":7022};
+document.ChampionCodes = {"Aatrox":266,"Ahri":103,"Akali":84,"Alistar":12,"Amumu":32,"Anivia":34,"Annie":1,"Aphelios":523,"Ashe":22,"AurelionSol":136,"Azir":268,"Bard":432,"Blitzcrank":53,"Brand":63,"Braum":201,"Caitlyn":51,"Camille":164,"Cassiopeia":69,"Chogath":31,"Corki":42,"Darius":122,"Diana":131,"Draven":119,"DrMundo":36,"Ekko":245,"Elise":60,"Evelynn":28,"Ezreal":81,"Fiddlesticks":9,"Fiora":114,"Fizz":105,"Galio":3,"Gangplank":41,"Garen":86,"Gnar":150,"Gragas":79,"Graves":104,"Gwen":887,"Hecarim":120,"Heimerdinger":74,"Illaoi":420,"Irelia":39,"Ivern":427,"Janna":40,"JarvanIV":59,"Jax":24,"Jayce":126,"Jhin":202,"Jinx":222,"Kaisa":145,"Kalista":429,"Karma":43,"Karthus":30,"Kassadin":38,"Katarina":55,"Kayle":10,"Kayn":141,"Kennen":85,"Khazix":121,"Kindred":203,"Kled":240,"KogMaw":96,"Leblanc":7,"LeeSin":64,"Leona":89,"Lillia":876,"Lissandra":127,"Lucian":236,"Lulu":117,"Lux":99,"Malphite":54,"Malzahar":90,"Maokai":57,"MasterYi":11,"MissFortune":21,"MonkeyKing":62,"Mordekaiser":82,"Morgana":25,"Nami":267,"Nasus":75,"Nautilus":111,"Neeko":518,"Nidalee":76,"Nocturne":56,"Nunu":20,"Olaf":2,"Orianna":61,"Ornn":516,"Pantheon":80,"Poppy":78,"Pyke":555,"Qiyana":246,"Quinn":133,"Rakan":497,"Rammus":33,"RekSai":421,"Rell":526,"Renekton":58,"Rengar":107,"Riven":92,"Rumble":68,"Ryze":13,"Samira":360,"Sejuani":113,"Senna":235,"Seraphine":147,"Sett":875,"Shaco":35,"Shen":98,"Shyvana":102,"Singed":27,"Sion":14,"Sivir":15,"Skarner":72,"Sona":37,"Soraka":16,"Swain":50,"Sylas":517,"Syndra":134,"TahmKench":223,"Taliyah":163,"Talon":91,"Taric":44,"Teemo":17,"Thresh":412,"Tristana":18,"Trundle":48,"Tryndamere":23,"TwistedFate":4,"Twitch":29,"Udyr":77,"Urgot":6,"Varus":110,"Vayne":67,"Veigar":45,"Velkoz":161,"Vi":254,"Viego":234,"Viktor":112,"Vladimir":8,"Volibear":106,"Warwick":19,"Xayah":498,"Xerath":101,"XinZhao":5,"Yasuo":157,"Yone":777,"Yorick":83,"Yuumi":350,"Zac":154,"Zed":238,"Ziggs":115,"Zilean":26,"Zoe":142,"Zyra":143};
+document.NeedToAddSpaces = {"AurelionSol":"Aurelion Sol","Chogath":"Cho'Gath","DrMundo":"Dr. Mundo","JarvanIV":"Jarvan IV","Kaisa":"Kai'Sa","Khazix":"Kha'Zix","KogMaw":"Kog'Maw","Leblanc":"LeBlanc","LeeSin":"Lee Sin","MasterYi":"Master Yi","MissFortune":"Miss Fortune","MonkeyKing":"Wukong","Nunu":"Nunu & Willump","RekSai":"Rek'Sai","TahmKench":"Tahm Kench","TwistedFate":"Twisted Fate","Velkoz":"Vel'Koz","XinZhao":"Xin Zhao"};
+
+// REPLACE HERE END
+
+String.prototype.has = function (findWhat) { return this.indexOf(findWhat) != -1 }
+String.prototype.trim = function () { return this.replace(/^\s+|\s+$/g, "") }
+String.prototype.replaceQuotes = function () { return this.replace(/"/g, '\\"') }
+String.prototype.removeTags = function () { return this.replace(/<[\D\d]*>/g, "") }
+String.prototype.removeSpaces = function () { return this.replace(/\s/g, "") }
+String.prototype.removeApostrophe = function () { return this.replace(/'/g, '') }
+String.prototype.removeParenthesis = function () { return this.replace(/ \([\D\d]*\)/gi, "") }
 
 // If the item name has " (Trinket)" or anything in parenthesis, make a duplicate entry that has the parenthesis removed. This might not be needed anymore.
-for(let k in document.ItemCodes)
-	if(k.has("("))
-		document.ItemCodes[ k.removeParenthesis() ] = document.ItemCodes[ k ];
+for (let k in document.ItemCodes)
+	if (k.has("("))
+		document.ItemCodes[k.removeParenthesis()] = document.ItemCodes[k];
 
-document.GatherTheData = function() {
+document.GatherTheData = function () {
 
 	let URL = document.location.href;
 	let Author, ChampionName, Title, ChampionCode;
-	if(URL.has("mobafire.com")) {
-		Author = document.querySelector("div[class$='top__title']").querySelector("a").innerHTML +" @ "+ document.querySelector("div[class$='top__title']").querySelector("a").href;
-		ChampionName = document.getElementById("sidebar-similar-builds").querySelector("h3").innerHTML;
-		Title = document.querySelector("div[class$='top__title']").querySelector("h2").innerHTML.removeTags().trim();
-		ChampionCode = document.ChampionCodes[ ChampionName.removeSpaces().removeApostrophe() ];
+	if (URL.has("mobafire.com")) {
+		Author = document.querySelector("div[class$='view-guide__header__top']").querySelector("a").innerHTML + " @ " + document.querySelector("div[class$='view-guide__header__top']").querySelector("a").href;
+		ChampionName = document.querySelector(".champ-tabs").querySelector("a.champ-tabs__more").innerHTML.replace('More ', '').replace(' Guides', '');
+		Title = document.querySelector("div[class$='view-guide__banner__slash']").querySelector("h2").querySelector('span').innerHTML.removeTags().trim();
+		ChampionCode = document.ChampionCodes[ChampionName.removeSpaces().removeApostrophe()];
 
-	} else if(URL.has("probuilds.net")) {
+	} else if (URL.has("probuilds.net")) {
 		let Highlighted = document.querySelector("td[class$='summoner highlighted']");
 		Author = Highlighted.children[0].innerHTML;
 		ChampionName = Highlighted.parentElement.children[0].children[0].children[0].attributes["data-id"].value;
-		if(document.NeedToAddSpaces[ChampionName])
+		if (document.NeedToAddSpaces[ChampionName])
 			ChampionName = document.NeedToAddSpaces[ChampionName];
-		Title = ChampionName +" &lt;"+ Author +"&gt;";
-		ChampionCode = document.ChampionCodes[ ChampionName ];
+		Title = ChampionName + " &lt;" + Author + "&gt;";
+		ChampionCode = document.ChampionCodes[ChampionName];
 	}
 
-	let Output = '{\n\t"title": "'+ Title.replaceQuotes() +'",\n\t"associatedMaps": [],\n\t"associatedChampions": ['+ ChampionCode +'],\n\t"_notes": "'+ URL +'",\n\t"_author": "'+ Author +'",\n\t"blocks": [';
+	let Output = '{\n\t"title": "' + Title.replaceQuotes() + '",\n\t"associatedMaps": [],\n\t"associatedChampions": [' + ChampionCode + '],\n\t"_notes": "' + URL + '",\n\t"_author": "' + Author + '",\n\t"blocks": [';
 	let GroupName = "", ItemCode, i, j;
 
-	if(URL.has("mobafire.com")) {
-		String.prototype.removeUnwantedCharacters=function(){return this.replace(/ - [\D]{1,}/g,"")} // The end of the names of some of Mabafire's items include " - Warrier", " - Runic Echoes", " - Cinderhunk", " - Bloodrazer" and these don't match the names in the https://ddragon.leagueoflegends.com/cdn/10.18.1/data/en_US/item.json
+	if (URL.has("mobafire.com")) {
+		String.prototype.removeUnwantedCharacters = function () { return this.replace(/ - [\D]{1,}/g, "") } // The end of the names of some of Mabafire's items include " - Warrier", " - Runic Echoes", " - Cinderhunk", " - Bloodrazer" and these don't match the names in the https://ddragon.leagueoflegends.com/cdn/10.18.1/data/en_US/item.json
 		let Divs = document.querySelectorAll("div.view-guide__items");
 		let ItemSpans;
-		for(i=0; i<Divs.length; i++) {
+		for (i = 0; i < Divs.length; i++) {
 			GroupName = Divs[i].children[0].children[0].innerHTML;
-			Output += '\n\t\t{\n\t\t\t"type": "'+ GroupName +'",\n\t\t\t"items": [';
+			Output += '\n\t\t{\n\t\t\t"type": "' + GroupName + '",\n\t\t\t"items": [';
 			ItemSpans = Divs[i].children[1].children;
 
-			for(j=0; j<ItemSpans.length; j++) {
-				ItemCode = document.ItemCodes[ ItemSpans[j].querySelector("span").innerHTML.removeUnwantedCharacters() ];
-				Output += '\n\t\t\t\t{ "id": "'+ItemCode+'", "count": 1 }';
-				if(j != ItemSpans.length-1)
+			for (j = 0; j < ItemSpans.length; j++) {
+				ItemCode = document.ItemCodes[ItemSpans[j].querySelector("span").innerHTML.removeUnwantedCharacters()];
+				Output += '\n\t\t\t\t{ "id": "' + ItemCode + '", "count": 1 }';
+				if (j != ItemSpans.length - 1)
 					Output += ',';
 			}
 			Output += '\n\t\t\t]\n\t\t}';
-			if(i < Divs.length-1)
+			if (i < Divs.length - 1)
 				Output += ',';
 		}
-	} else if(URL.has("probuilds.net")) {
+	} else if (URL.has("probuilds.net")) {
 		let LIs = document.querySelector("ul.buy-order").children;
 		let time, buys = [];
 
-		for(i=0; i<LIs.length; i++) {
+		for (i = 0; i < LIs.length; i++) {
 			time = LIs[i].children[1].innerHTML.trim();
-			if(time.length>9) {
+			if (time.length > 9) {
 				time = LIs[i].children[2].innerHTML.trim();
-				GroupName = "Sold @ "+ time;
+				GroupName = "Sold @ " + time;
 			}
-			buys.push( {
+			buys.push({
 				ItemCode: LIs[i].children[0].attributes["data-id"].value,
 				Time: time
-			} );
+			});
 
-			if( i==LIs.length-1 || GroupName.has("Sold") || LIs[i+1].className.has("first") ) {
-				if(!GroupName) for(j=0; j<buys.length; j++) {
-					if(j==0)
+			if (i == LIs.length - 1 || GroupName.has("Sold") || LIs[i + 1].className.has("first")) {
+				if (!GroupName) for (j = 0; j < buys.length; j++) {
+					if (j == 0)
 						GroupName = buys[j].Time;
-					else if(j==buys.length-1)
-						GroupName += " ~ "+ buys[j].Time;
+					else if (j == buys.length - 1)
+						GroupName += " ~ " + buys[j].Time;
 				}
-				Output += '\n\t\t{\n\t\t\t"type": "'+ GroupName +'",\n\t\t\t"items": [';
-				for(j=0; j<buys.length; j++) {
-					Output += '\n\t\t\t\t{ "id": "'+ buys[j].ItemCode +'", "count": 1 }';
-					if(j != buys.length-1 )
+				Output += '\n\t\t{\n\t\t\t"type": "' + GroupName + '",\n\t\t\t"items": [';
+				for (j = 0; j < buys.length; j++) {
+					Output += '\n\t\t\t\t{ "id": "' + buys[j].ItemCode + '", "count": 1 }';
+					if (j != buys.length - 1)
 						Output += ',';
 				}
 				Output += '\n\t\t\t]\n\t\t}';
-				if(i < LIs.length-1)
+				if (i < LIs.length - 1)
 					Output += ',';
 				GroupName = "";
 				buys = [];
@@ -112,12 +116,12 @@ document.GatherTheData = function() {
 var Button = document.createElement("button");
 Button.style = "position:fixed; top:50px; right:7px; z-index:999999; border:0px; background:darkblue; color:#bbcbe8; padding:5px 9px; font-family:'Open Sans Mobafire','Open Sans',sans-serif,sans-serif";
 Button.innerHTML = "Items JSON";
-Button.onmouseover = function() {
+Button.onmouseover = function () {
 	document.getElementById("TheTextarea").value = document.GatherTheData();
 	document.getElementById("TheTextarea").style.visibility = "visible";
 }
-Button.onclick = function() {
-	document.getElementById("TheTextarea").style.visibility = document.getElementById("TheTextarea").style.visibility=="hidden" ? "visible" : "hidden";
+Button.onclick = function () {
+	document.getElementById("TheTextarea").style.visibility = document.getElementById("TheTextarea").style.visibility == "hidden" ? "visible" : "hidden";
 }
 document.body.appendChild(Button);
 
@@ -125,7 +129,7 @@ var TheTextarea = document.createElement("textarea");
 TheTextarea.style = "position:fixed; top:82px; right:7px; z-index:999999; border:2px dashed navy; width:280px; height:420px; background:gainsboro; color:black; font-size:6px; font-family:'Open Sans Mobafire','Open Sans',sans-serif,sans-serif; overflow-x:hidden; visibility:hidden";
 TheTextarea.id = "TheTextarea";
 TheTextarea.value = document.GatherTheData();
-TheTextarea.onmouseover = function() { document.getElementById("TheTextarea").select() }
+TheTextarea.onmouseover = function () { document.getElementById("TheTextarea").select() }
 document.body.appendChild(TheTextarea);
 
 /* THE FOLLOWING IS A REFERENCE FOR HOW I GATHERED THE ITEM AND CHAMPION DATA
@@ -133,12 +137,21 @@ document.body.appendChild(TheTextarea);
 
 // https://ddragon.leagueoflegends.com/cdn/10.25.1/data/en_US/item.json
 // https://ddragon.leagueoflegends.com/cdn/10.25.1/data/es_ES/item.json // Spanish version
-INPUT = JSON.parse(this.JSONView.json.data).data;
-OUTPUT = "document.ItemCodes = {";
-for(code in INPUT)
-	OUTPUT += '"' + INPUT[code].name + '":' + code + ",";
-console.log( OUTPUT.slice(0,-1) + "};" );
 
+const pre = document.querySelector('pre');
+let INPUT = JSON.parse(pre.innerText).data;
+let OUTPUT = "{";
+let idx = 1;
+for(let code in INPUT){
+	OUTPUT += `"${INPUT[code].name}" : "${code}" ${
+	  idx+1===INPUT.length?'':','
+	}`;
+	idx+=1;
+}
+
+OUTPUT= OUTPUT.slice(0,-1)
+OUTPUT+= "}"
+console.log(JSON.parse(OUTPUT));
 // https://ddragon.leagueoflegends.com/cdn/10.25.1/data/en_US/champion.json
 // the es_ES version is identical
 INPUT = JSON.parse(this.JSONView.json.data).data;

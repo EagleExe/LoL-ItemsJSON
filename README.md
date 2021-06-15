@@ -1,3 +1,18 @@
+# Additions in this fork
+This fork adapts to the updated html code of mobafire and also has a extra small node project that you can use to update the champs and items.
+To update to the latest champs all you need to do is 
+1. clone this repo. 
+2. Install nodejs
+3. Open the command prompt or terminal in cloned folder
+4. type `git checkout dev && cd getItems`
+5. type `npm install && node start get-vars`
+6. Wait a few seconds. There will be an output on the terminal like `Latest Version =>  11.12.1`
+7. When you see `success`
+8. Browse to data folder and look for vars-{whatever verion was output}.js
+9. Copy everything from here
+10. Go to `LoL-ItemsJSON.js` and `replace line 13 to line 14` or everything between `REPLACE HERE START` and `REPLACE HERE END`
+11. import `Lol-ItemsJSON.js` to scriptloader and enjoy the latest items and champs
+
 # WHY THIS IS
 
 I'm new to League of Legends, and I have no idea why these sites with guides don't already have this function. My buddy was teaching me how to manually enter item sets from a Mobafire guide, and I was like **WTH why isn't there an export feature?** The game clearly has the ability to import JSON files. This short snippet of Javascript shrinks a 10 minute task down to 10 seconds. Maybe if I get requests I'll update the script to work on other sites too.
