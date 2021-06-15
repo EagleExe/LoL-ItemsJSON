@@ -8,7 +8,7 @@ To update to the latest champs all you need to do is
 5. type `npm install && node start get-vars`
 6. Wait a few seconds. There will be an output on the terminal like `Latest Version =>  11.12.1`
 7. When you see `success`
-8. Browse to data folder and look for vars-{whatever verion was output}.js
+8. Browse to data folder and look for `vars-{whatever verion was output}.js`
 9. Copy everything from here
 10. Go to `LoL-ItemsJSON.js` and `replace line 13 to line 14` or everything between `REPLACE HERE START` and `REPLACE HERE END`
 11. import `Lol-ItemsJSON.js` to scriptloader and enjoy the latest items and champs
