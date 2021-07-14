@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        LoL-ItemsJSON
-// @version     11.13.1
+// @version     11.14.1
 // @author      EagleExe, Abdul Haseeb
 // @include     https://mobafire.com/league-of-legends/build/*
 // @include     https://www.mobafire.com/league-of-legends/build/*
