@@ -8,7 +8,7 @@
 // @include     https://www.probuilds.net/guide/show/*
 // ==/UserScript==
 
-//Fixed 29th Sep 2022 by 
+//Fixed 29th Sep 2022 by aougri
 
 String.prototype.has = function (findWhat) {
   return this.indexOf(findWhat) != -1;
