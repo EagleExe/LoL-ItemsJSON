@@ -1,11 +1,15 @@
 # Additions in this fork
-This fork adapts to the updated html code of mobafire and also has a extra small node project that you can use to update the champs and items.
+
 To update to the latest champs all you need to do is 
 1. NOTHING
 
 I have added ajax calls to riot api and save the data in local storage. On every load, i check if the current patch verion is later than the saved patch version. Then i get a new list of items and champions.
 For Items, I am fetching all 21 locales. But for champs, most sites have english names. So i just fetched the english names
-Tested on both mobafire and probuild I haved added provisions for scraping from some other sites as well. I guess if someone wants to work on them in the future they can. Or maybe if i get omega bored at some point. I might do that.
+Tested on both mobafire and probuild I haved added provisions for scraping from some other sites as well. I guess if someone wants to work on them in the 
+future they can. Or maybe if i get omega bored at some point. I might do that.
+
+I have also updated the button placement. It's in the page content before the items section now.
+Also just clicking on the button just copies it to the clipboard that you can just paste.
 
 # WHY THIS IS
 
