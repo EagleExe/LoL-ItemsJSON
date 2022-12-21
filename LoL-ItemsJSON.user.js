@@ -219,7 +219,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 			{
 				title: document.querySelector('.guide-items div.left:first-of-type h3').innerText,
 				content: [...document.querySelectorAll('.guide-items div.left:first-of-type ul li')]
-					.map(it => it.querySelector('p').innerText).filter(i => i)
+					.map(it => it.querySelector('p').innerText.toLowerCase()).filter(i => i)
 			},
 			...[...document.querySelectorAll('.guide-items div.buy-order ul.buy-order li')]
 				.reduce((acc, it, index) => {
@@ -251,7 +251,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 	const _scrapeFromLolKing = () => { }
 	// Scraping the items from LolCounter
 	const _scrapeFromLolCounter = () => { }
-	
+
 	// Copy to clipboard
 	const _copyToClipboard = async (title, text) => {
 		await navigator.clipboard.writeText(text);
