@@ -1,17 +1,11 @@
 # Additions in this fork
 This fork adapts to the updated html code of mobafire and also has a extra small node project that you can use to update the champs and items.
 To update to the latest champs all you need to do is 
-1. clone this repo. 
-2. Install nodejs
-3. Open the command prompt or terminal in cloned folder
-4. type `git checkout dev && cd getItems`
-5. type `npm install && npm run create-vars`
-6. Wait a few seconds. There will be an output on the terminal like `Latest Version =>  11.12.1`
-7. When you see `success`
-8. Browse to data folder and look for `vars-{whatever verion was output}.js`
-9. Copy everything from here
-10. Go to `LoL-ItemsJSON.js` and `replace line 13 to line 14` or everything between `REPLACE HERE START` and `REPLACE HERE END`
-11. import `Lol-ItemsJSON.js` to scriptloader and enjoy the latest items and champs
+1. NOTHING
+
+I have added ajax calls to riot api and save the data in local storage. On every load, i check if the current patch verion is later than the saved patch version. Then i get a new list of items and champions.
+For Items, I am fetching all 21 locales. But for champs, most sites have english names. So i just fetched the english names
+Tested on both mobafire and probuild I haved added provisions for scraping from some other sites as well. I guess if someone wants to work on them in the future they can. Or maybe if i get omega bored at some point. I might do that.
 
 # WHY THIS IS
 
