@@ -238,6 +238,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 				}, [])
 		]
 	});
+	/* @todo */
 	// Scraping the items from Champion.GG
 	const _scrapeFromChampionGG = () => { }
 	// Scraping the items from Lolalytics
@@ -250,6 +251,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 	const _scrapeFromLolKing = () => { }
 	// Scraping the items from LolCounter
 	const _scrapeFromLolCounter = () => { }
+	
 	// Copy to clipboard
 	const _copyToClipboard = async (title, text) => {
 		await navigator.clipboard.writeText(text);
@@ -291,6 +293,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 		const location = document.location.href;
 		if (location.includes('mobafire.com')) return _scrapeFromMobaFire();
 		if (location.includes('probuilds.net')) return _scrapeFromProBuilds();
+		/* @todo */
 		if (location.includes('champion.gg')) return _scrapeFromChampionGG();
 		if (location.includes('lolalytics.com')) return _scrapeFromLolalytics();
 		if (location.includes('u.gg')) return _scrapeFromUGG();
