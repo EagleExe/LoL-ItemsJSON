@@ -55,7 +55,7 @@ const RiotAPI = function () {
 			const version = await self.request.get('https://ddragon.leagueoflegends.com/api/versions.json');
 			return JSON.parse(version)[0];
 		} catch (error) {
-			console.log('🤷‍♂️ file: LoL-ItemsJSON.user.js:33 🤷‍♂️ error', error)
+			console.log('ð¤·ââï¸ file: LoL-ItemsJSON.user.js:33 ð¤·ââï¸ error', error)
 		}
 	}
 	const _getLangs = async () => {
@@ -65,7 +65,7 @@ const RiotAPI = function () {
 			return JSON.parse(langs);
 		}
 		catch (error) {
-			console.log('🤷‍♂️ file: LoL-ItemsJSON.user.js:33 🤷‍♂️ error', error)
+			console.log('ð¤·ââï¸ file: LoL-ItemsJSON.user.js:33 ð¤·ââï¸ error', error)
 		}
 	}
 	// Get resources from riot
@@ -85,7 +85,7 @@ const RiotAPI = function () {
 			const other = reduceNonSameChamps(JSON.parse(champsJson).data);
 			return [single, other];
 		} catch (error) {
-			console.log('🤷‍♂️ file: LoL-ItemsJSON.user.js:42 🤷‍♂️ error', error)
+			console.log('ð¤·ââï¸ file: LoL-ItemsJSON.user.js:42 ð¤·ââï¸ error', error)
 		}
 	}
 }
@@ -149,41 +149,41 @@ const LolItemsJson = function ({ logs = true } = {}) {
 	// Integrity check
 	const _integrityCheck = () => {
 		if (_itemCodes === null || _championCodes === null || _needToAddSpaces === null) {
-			log('👎 Integrity check failed. 👎')
+			log('ð Integrity check failed. ð')
 			return false;
 		}
-		log('👍 Integrity check passed. 👍')
+		log('ð Integrity check passed. ð')
 		return true;
 	}
 	// Check if the script is already installed
 	const _alreadyInstalled = () => {
 		if (_installedVersion === null) {
-			log('👎 Script is not installed. 👎')
+			log('ð Script is not installed. ð')
 			return false;
 		}
-		log('👍 Script is already installed. 👍')
+		log('ð Script is already installed. ð')
 		return true;
 	}
 	//  Init function
 	const _init = async () => {
 		try {
 			_installedVersion = await riotAPI.currentPatch();
-			log('👍 Fetching the latest version of the items. 👍')
+			log('ð Fetching the latest version of the items. ð')
 			_itemCodes = await riotAPI.getResources(_installedVersion, 'item');
 			localStorage.setItem(`${_prefix}itemCodes`, JSON.stringify(_itemCodes));
-			log('👍 Items Loaded... 👍');
+			log('ð Items Loaded... ð');
 			//	
-			log('👍 Fetching the latest version of the champions. 👍')
+			log('ð Fetching the latest version of the champions. ð')
 			const response = await riotAPI.getResources(_installedVersion, 'champion');
 			_championCodes = response[0]
 			_needToAddSpaces = response[1]
 			//
 			localStorage.setItem(`${_prefix}championCodes`, JSON.stringify(_championCodes));
 			localStorage.setItem(`${_prefix}needToAddSpaces`, JSON.stringify(_needToAddSpaces));
-			log('👍 Champs Loaded... 👍');
+			log('ð Champs Loaded... ð');
 			// 
 		} catch (error) {
-			log('➡️ 🤷‍♂️ file: LoL-ItemsJSON.user.js:108 🤷‍♂️ error', error)
+			log('â¡ï¸ ð¤·ââï¸ file: LoL-ItemsJSON.user.js:108 ð¤·ââï¸ error', error)
 			alert('THERE WAS AN ERROR WHILE INITIALIZING THE SCRIPT. PLEASE RELOAD THE PAGE AND TRY AGAIN. IF THE ERROR PERSISTS, PLEASE CONTACT THE DEVELOPER.');
 		}
 	}
@@ -251,7 +251,6 @@ const LolItemsJson = function ({ logs = true } = {}) {
 	const _scrapeFromLolKing = () => { }
 	// Scraping the items from LolCounter
 	const _scrapeFromLolCounter = () => { }
-
 	// Copy to clipboard
 	const _copyToClipboard = async (title, text) => {
 		await navigator.clipboard.writeText(text);
@@ -267,7 +266,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 		buttonWrapper.style.margin = '10px';
 		buttonWrapper.width = "100%"
 		const button = document.createElement('button');
-		button.innerText = '🚀 Export Build to clipboard 🚀';
+		button.innerText = 'ð Export Build to clipboard ð';
 		button.style.padding = '10px';
 		button.style.borderRadius = '5px';
 		button.style.border = 'none';
