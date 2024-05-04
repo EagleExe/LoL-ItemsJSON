@@ -49,6 +49,7 @@ const reduceItems = (items) => {
 	}, {});
 
 	finalItems['muramana'] = finalItems['manamune'];
+	return finalItems;
   };
 // 
 const reduceChampions = (champions) => Object.entries(champions).reduce((acc, [champ, value]) => ({
