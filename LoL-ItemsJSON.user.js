@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         League Items JSON Exporter
 // @description  Export your mobafire builds to League of Legends Item Sets
-// @version      2.1
+// @version      2.2
 // @author       EagleExe
 // @contributer  Passbaan
 // @match        https://mobafire.com/league-of-legends/build/*
