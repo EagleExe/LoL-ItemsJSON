@@ -43,10 +43,12 @@ const reduceItems = (items) => {
 	  acc[value].push(key);
 	  return acc;
 	}, {});
-	return Object.entries(step2).reduce((acc, [name, keys]) => {
+	const finalItems =  Object.entries(step2).reduce((acc, [name, keys]) => {
 	  const intKeys = keys.map((k) => parseInt(k, 10));
 	  return { ...acc, [name]: Math.min(...intKeys) };
 	}, {});
+
+	finalItems['muramana'] = finalItems['manamune'];
   };
 // 
 const reduceChampions = (champions) => Object.entries(champions).reduce((acc, [champ, value]) => ({
@@ -70,7 +72,7 @@ const RiotAPI = function () {
 			const version = await self.request.get('https://ddragon.leagueoflegends.com/api/versions.json');
 			return JSON.parse(version)[0];
 		} catch (error) {
-			console.log('ð¤·ââï¸ file: LoL-ItemsJSON.user.js:33 ð¤·ââï¸ error', error)
+			console.log('>>>> file: LoL-ItemsJSON.user.js:33 >>>>> error', error)
 		}
 	}
 	const _getLangs = async () => {
@@ -80,7 +82,7 @@ const RiotAPI = function () {
 			return JSON.parse(langs);
 		}
 		catch (error) {
-			console.log('ð¤·ââï¸ file: LoL-ItemsJSON.user.js:33 ð¤·ââï¸ error', error)
+			console.log('>>>> file: LoL-ItemsJSON.user.js:33 >>>>> error', error)
 		}
 	}
 	// Get resources from riot
@@ -100,7 +102,7 @@ const RiotAPI = function () {
 			const other = reduceNonSameChamps(JSON.parse(champsJson).data);
 			return [single, other];
 		} catch (error) {
-			console.log('ð¤·ââï¸ file: LoL-ItemsJSON.user.js:42 ð¤·ââï¸ error', error)
+			console.log('>>>> file: LoL-ItemsJSON.user.js:42 >>>>> error', error)
 		}
 	}
 }
@@ -164,41 +166,40 @@ const LolItemsJson = function ({ logs = true } = {}) {
 	// Integrity check
 	const _integrityCheck = () => {
 		if (_itemCodes === null || _championCodes === null || _needToAddSpaces === null) {
-			log('ð Integrity check failed. ð')
+			log('**** Integrity check failed. ****')
 			return false;
 		}
-		log('ð Integrity check passed. ð')
+		log('*** Integrity check passed. ***')
 		return true;
 	}
 	// Check if the script is already installed
 	const _alreadyInstalled = () => {
 		if (_installedVersion === null) {
-			log('ð Script is not installed. ð')
+			log('**** Script is not installed. ****')
 			return false;
 		}
-		log('ð Script is already installed. ð')
+		log('*** Script is already installed. ***')
 		return true;
 	}
 	//  Init function
 	const _init = async () => {
 		try {
 			_installedVersion = await riotAPI.currentPatch();
-			log('ð Fetching the latest version of the items. ð')
+			log('*** Fetching the latest version of the items. ***')
 			_itemCodes = await riotAPI.getResources(_installedVersion, 'item');
 			localStorage.setItem(`${_prefix}itemCodes`, JSON.stringify(_itemCodes));
-			log('ð Items Loaded... ð');
+			log('*** Items Loaded... ***');
 			//	
-			log('ð Fetching the latest version of the champions. ð')
+			log('*** Fetching the latest version of the champions. ***')
 			const response = await riotAPI.getResources(_installedVersion, 'champion');
 			_championCodes = response[0]
 			_needToAddSpaces = response[1]
 			//
 			localStorage.setItem(`${_prefix}championCodes`, JSON.stringify(_championCodes));
 			localStorage.setItem(`${_prefix}needToAddSpaces`, JSON.stringify(_needToAddSpaces));
-			log('ð Champs Loaded... ð');
+			log('*** Champs Loaded... ***');
 			// 
 		} catch (error) {
-			log('â¡ï¸ ð¤·ââï¸ file: LoL-ItemsJSON.user.js:108 ð¤·ââï¸ error', error)
 			alert('THERE WAS AN ERROR WHILE INITIALIZING THE SCRIPT. PLEASE RELOAD THE PAGE AND TRY AGAIN. IF THE ERROR PERSISTS, PLEASE CONTACT THE DEVELOPER.');
 		}
 	}
@@ -281,7 +282,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 		buttonWrapper.style.margin = '10px';
 		buttonWrapper.width = "100%"
 		const button = document.createElement('button');
-		button.innerText = 'ð Export Build to clipboard ð';
+		button.innerText = '🚀🚀🚀 Export Build to clipboard 🚀🚀🚀';
 		button.style.padding = '10px';
 		button.style.borderRadius = '5px';
 		button.style.border = 'none';
