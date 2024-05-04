@@ -19,7 +19,7 @@ I'm new to League of Legends, and I have no idea why these sites with guides don
 
 # WHAT IT DO
 
-When you're on a Mobafire guide page (for example https://www.mobafire.com/league-of-legends/build/vapora-dark-in-depth-adc-tristana-guide-season-10-447328) this Tampermonkey/Greasemonkey script (aka userscript) creates a blue floating button that says "Items JSON" in the upper-right that when you mouseover will display a JSON block that contains the codes for the item sets so that you can copy and paste them into the game.
+When you're on a Mobafire guide page (for example https://www.mobafire.com/league-of-legends/build/vapora-dark-in-depth-adc-tristana-guide-season-10-447328) this Tampermonkey/Greasemonkey script (aka userscript) creates a green button that says "Export build to clipboard" in the middle of the page that when you click will copy a JSON block automatically that contains the codes for the item sets so that you can copy and paste them into the game.
 
 <img src="images\image-20200807232917193.png" alt="image-20200807232917193" style="zoom:50%;" />
 
