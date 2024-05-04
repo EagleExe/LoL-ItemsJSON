@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         League Items JSON Exporter
 // @description  Export your mobafire builds to League of Legends Item Sets
-// @version      1.0
+// @version      2.1
 // @author       EagleExe
 // @contributer  Passbaan
 // @contributer  iustusae
@@ -29,13 +29,27 @@ const Request = function () {
 	return self;
 }
 // Reduce Items to a single object
-const reduceItems = (items) => Object.entries(items)
-	.reduce((acc, [itemCode, value]) => ({
+const reduceItems = (items) => {
+	const step1 = Object.entries(items).reduce((acc, [itemCode, value]) => {
+	  return {
 		...acc,
-		// Remove the leading '22' from the itemCode (if exists)
-		[value.name.toLowerCase()]: parseInt(itemCode.slice(2), 10) // Remove first 2 digits
-	}), {});
-//
+  
+		[itemCode]: value.name.toLowerCase(),
+	  };
+	}, {});
+	const step2 = Object.entries(step1).reduce((acc, [key, value]) => {
+	  if (!acc[value]) {
+		acc[value] = [];
+	  }
+	  acc[value].push(key);
+	  return acc;
+	}, {});
+	return Object.entries(step2).reduce((acc, [name, keys]) => {
+	  const intKeys = keys.map((k) => parseInt(k, 10));
+	  return { ...acc, [name]: Math.min(...intKeys) };
+	}, {});
+  };
+// 
 const reduceChampions = (champions) => Object.entries(champions).reduce((acc, [champ, value]) => ({
 	...acc,
 	[champ.toLowerCase()]: parseInt(value.key, 10)
