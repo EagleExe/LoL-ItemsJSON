@@ -4,6 +4,7 @@
 // @version      1.0
 // @author       EagleExe
 // @contributer  Passbaan
+// @contributer  iustusae
 // @match        https://mobafire.com/league-of-legends/build/*
 // @match        https://www.mobafire.com/league-of-legends/build/*
 // @match        https://probuilds.net/guide/show/*
