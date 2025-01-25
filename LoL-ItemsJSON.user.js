@@ -4,6 +4,7 @@
 // @version      1.0
 // @author       EagleExe
 // @contributer  Passbaan
+// @contributer  iustusae
 // @match        https://mobafire.com/league-of-legends/build/*
 // @match        https://www.mobafire.com/league-of-legends/build/*
 // @match        https://probuilds.net/guide/show/*
@@ -31,14 +32,15 @@ const Request = function () {
 const reduceItems = (items) => Object.entries(items)
 	.reduce((acc, [itemCode, value]) => ({
 		...acc,
-		[value.name.toLowerCase()]: parseInt(itemCode, 10)
+		// Remove the leading '22' from the itemCode (if exists)
+		[value.name.toLowerCase()]: parseInt(itemCode.slice(2), 10) // Remove first 2 digits
 	}), {});
-// 
+//
 const reduceChampions = (champions) => Object.entries(champions).reduce((acc, [champ, value]) => ({
 	...acc,
 	[champ.toLowerCase()]: parseInt(value.key, 10)
 }), {})
-// 
+//
 const reduceNonSameChamps = (champions) => Object.entries(champions)
 	.filter(([champ, value]) => champ !== value.name)
 	.reduce((acc, [champ, value]) => ({
@@ -95,7 +97,7 @@ const createLogger = (showLogs = false) => (message, data = null) => {
 //  Items JSON Class
 const ItemSet = function (data, itemCodes, championCodes, needToAddSpaces) {
 	const self = this;
-	//  
+	//
 	const getItemBlocks = () => data.items.map((item) => ({
 		title: item.title,
 		content: item.content.map((item) => item.trim()),
@@ -104,10 +106,38 @@ const ItemSet = function (data, itemCodes, championCodes, needToAddSpaces) {
 		content: item.content.map((item) => `${itemCodes[item]}`),
 	})).map((item) => ({
 		type: item.title,
-		items: item.content.map((it) => ({
-			id: it,
-			count: 1
-		})),
+		items: item.content.map((it) => {
+			let itemId = it.toString();
+
+			// Post processing to make the item codes adhere to the new 4 digit format
+			// By removing leading 22 and 23 inside the item code we remove the "removed item" issue.
+			if (itemId.length > 4) {
+				itemId = itemId.replace(/^\d{2}/, '')
+			}
+
+			if (itemId.length > 4) {
+				itemId = itemId.replace('23', '');
+			}
+
+
+			// Some jungle items got their ids changed.
+			// The upgraded tear items like Muramana or Fimblewinter are not detected in item sets 
+			const replacements = {
+				'3121': '3119', // Fimblewinter -> Winter's Approach
+				'3042': '3004', // Muramana -> Manamune
+				'3040': '3003', // Seraphim's Embrace -> Archangel's Staff
+				'1082': '1101', // Start of Jungle items
+				'1107': '1101',
+				'1106': '1102',
+				'1105': '1103', // End of Jungle items
+			};
+
+			itemId = replacements[itemId] || itemId;
+			return {
+				id: itemId,
+				count: 1
+			};
+		}),
 	}));
 	// Get the champion code
 	const getChampCode = () => championCodes[data.champion] || championCodes[needToAddSpaces[data.champion]]
@@ -172,7 +202,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 			_itemCodes = await riotAPI.getResources(_installedVersion, 'item');
 			localStorage.setItem(`${_prefix}itemCodes`, JSON.stringify(_itemCodes));
 			log('ð Items Loaded... ð');
-			//	
+			//
 			log('ð Fetching the latest version of the champions. ð')
 			const response = await riotAPI.getResources(_installedVersion, 'champion');
 			_championCodes = response[0]
@@ -181,7 +211,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 			localStorage.setItem(`${_prefix}championCodes`, JSON.stringify(_championCodes));
 			localStorage.setItem(`${_prefix}needToAddSpaces`, JSON.stringify(_needToAddSpaces));
 			log('ð Champs Loaded... ð');
-			// 
+			//
 		} catch (error) {
 			log('â¡ï¸ ð¤·ââï¸ file: LoL-ItemsJSON.user.js:108 ð¤·ââï¸ error', error)
 			alert('THERE WAS AN ERROR WHILE INITIALIZING THE SCRIPT. PLEASE RELOAD THE PAGE AND TRY AGAIN. IF THE ERROR PERSISTS, PLEASE CONTACT THE DEVELOPER.');
@@ -310,7 +340,7 @@ const LolItemsJson = function ({ logs = true } = {}) {
 		_makeListener(btn, itemSet.title, json);
 		return itemSet.toJson();
 	}
-	// Actual Logic	
+	// Actual Logic
 	return self;
 };
 // Load the script
